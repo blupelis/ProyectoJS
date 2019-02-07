@@ -1,2 +1,0 @@
-http://www.omdbapi.com/?i=tt3896198&apikey=4a0ce318
-http://www.omdbapi.com/?apikey=[4a0ce318]&
