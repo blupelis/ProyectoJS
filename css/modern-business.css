@@ -9,9 +9,20 @@ body {
   background-position: center;
 }
 
-h1, .navbar-brand, .nav-item a {
+h1, .navbar-brand, .nav-item a, p, h3, label {
   color: white;
 }
+
+
+.navbar-toggler-icon{
+  background-image: url("../img/menu.png");
+  padding-right: 56px;
+  
+}
+.card-body p{
+  color: black;
+}
+
 .carousel-item {
   height: 65vh;
   min-height: 300px;
