@@ -5,8 +5,13 @@
  */
 body {
   padding-top: 56px;
+  background-image: url("../img/1.jpg");
+  background-position: center;
 }
 
+h1, .navbar-brand, .nav-item a {
+  color: white;
+}
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -20,3 +25,4 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
