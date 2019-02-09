@@ -5,6 +5,22 @@
  */
 body {
   padding-top: 56px;
+  background-image: url("../img/1.jpg");
+  background-position: center;
+}
+
+h1, .navbar-brand, .nav-item a, p, h3, label {
+  color: white;
+}
+
+
+.navbar-toggler-icon{
+  background-image: url("../img/menu.png");
+  padding-right: 56px;
+  
+}
+.card-body p{
+  color: black;
 }
 
 .carousel-item {
@@ -20,3 +36,4 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
