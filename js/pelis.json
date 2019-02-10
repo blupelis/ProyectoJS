@@ -1,0 +1,44 @@
+[
+      {
+        "id": 1,
+        "nombre": "El sexto sentido",
+        "desc": "puto",
+        "clasificacion": "Drama"
+      },
+      {
+        "id": 2,
+        "nombre": "Pulp Fiction",
+        "desc": "el que lo",
+        "clasificacion": "Acción"
+      },
+      {
+        "id": 3,
+        "nombre": "Todo Sobre Mi Madre",
+        "desc": "lea jaja salu2 XD LOL",
+        "clasificacion": "Drama"
+      },
+      {
+        "id": 4,
+        "nombre": "300",
+        "desc": "Zack Snyder",
+        "clasificacion": "Acción"
+      },
+      {
+        "id": 5,
+        "nombre": "El silencio de los corderos",
+        "desc": "Jonathan Demme",
+        "clasificacion": "Drama"
+      },
+      {
+        "id": 6,
+        "nombre": "Forrest Gump",
+        "desc": "Robert Zemeckis",
+        "clasificacion": "Comedia"
+      },
+      {
+        "id": 7,
+        "nombre": "Las Hurdes",
+        "desc": "Luis Buñuel",
+        "clasificacion": "Documental"
+      }
+    ]
