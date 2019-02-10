@@ -9,7 +9,7 @@ body {
   background-position: center;
 }
 
-h1, .navbar-brand, .nav-item a, p, h3, label {
+h1, .navbar-brand, .nav-item a, p, h2, h3, label {
   color: white;
 }
 
@@ -21,6 +21,13 @@ h1, .navbar-brand, .nav-item a, p, h3, label {
 }
 .card-body p{
   color: black;
+}
+
+footer{
+  
+  height: 40px;
+
+    
 }
 
 .carousel-item {
