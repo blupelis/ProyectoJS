@@ -16,7 +16,8 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
-  <link href="js/sriptmr.js" rel="stylesheet">
+  <script src="js/sriptmr.js"></script>
+  
   <!-- Favicon-->
   <link rel="shortcut icon" type=”image/png” href="img/favicon.ico"/>
 
@@ -54,9 +55,7 @@
     </div>
   </nav>
 
-  <script>
-    $('p').hide();  
-  </script>
+
 
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -144,7 +143,7 @@
 
     <!-- Portfolio Section -->
 
-    <div class="row">
+    <div class="row"  >
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="https://static.seekingalpha.com/uploads/2017/7/14527192_15000027614377_rId4.jpg" alt=""></a>
@@ -152,13 +151,20 @@
             <h4 class="card-title">
               <a href="#">Project One</a>
             </h4>
+            <div class="toggler">
+              <div id="effect" class="newClass ui-corner-all">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
           </div>
+        </div>
+          </div>
           <div class="card-footer">
+              <button id="button" class="ui-state-default ui-corner-all">Leer Descripción</button>
             <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
+
+     
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="img/300.png" alt=""></a>
