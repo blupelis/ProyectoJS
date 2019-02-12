@@ -21,33 +21,31 @@ $(document).ready(function(){
 
 
       $("#btn-r").click(function(){
-        
-        var err;
 
         if($("#nombre").val() == ""){
-            err = "El campo Nombre no puede estar vacío.</b>!";
+            
             $("#err").html("El campo Nombre no puede estar vacío.</b>!");
             //alert("El campo Nombre no puede estar vacío.");
-            $("#nombre").focus();       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
+            $("#nombre").focus(); // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
             return false;
         }
         
         if($("#email").val() == ""){
-            err = "El campo email no puede estar vacío.</b>!";
-            $("#err").html("El campo email no puede estar vacío.</b>!");
+            //$("#err").html("El campo email no puede estar vacío.</b>!");
             //alert("El campo email no puede estar vacío.");
             $("#email").focus();
             return false;
         }
 
         if($("#pass").val() == ""){
-            //err = "El campo email no puede estar vacío.</b>!";
             //alert("La contraseña no puede estar vacía.");
             $("#err").html("La contraseña no puede estar vacía</b>!");
             $("#pass").focus();
             return false;
         }
 
+        alert("Enorabuena te has registrado correctamente!! \n" + "Te hemos enviado un correo de validacion a tu correo electronico: " + $("#email").val());
+        
       });
     
 });
