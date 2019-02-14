@@ -12,11 +12,17 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
+  <!-- JS -->
   <script src="js/sriptmr.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
   
   <!-- Favicon-->
   <link rel="shortcut icon" type=”image/png” href="img/favicon.ico"/>
@@ -98,6 +104,12 @@
     </div>
   </header>
 
+  <div id=zooms>
+    <button class="aumentarFont">[ + aumentar ]</button> 
+    <a href="#" class="disminuirFont">[ - disminuir ]</a> 
+    <a href="#" class="resetearFont">[ resetear ]</a>
+  </div>
+
   <!-- Page Content -->
   <div class="container">
 
@@ -153,12 +165,14 @@
             </h4>
             <div class="toggler">
               <div id="effect" class="newClass ui-corner-all">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-        </div>
+                ESTE TEXTO ES UNA MIERDA Y NO SE EXPANDE
+              </div>
+            </div>
+            <button id="button" class="ui-state-default ui-corner-all">Leer Descripción</button>
+            
           </div>
           <div class="card-footer">
-              <button id="button" class="ui-state-default ui-corner-all">Leer Descripción</button>
+              
             <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
@@ -282,6 +296,7 @@
     </div>
     <!-- /.container -->
   </footer>
+ 
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
