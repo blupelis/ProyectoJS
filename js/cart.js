@@ -4,22 +4,31 @@ window.onload = function () {
         {
             id: 1,
             nombre: 'Patata',
-            precio: 1
+            precio: 1,
+            descripcion: 'puto',
+            src: '/img/1.jpg'
+
         },
         {
             id: 2,
             nombre: 'Cebolla',
-            precio: 1.2
+            precio: 1.2,
+            descripcion: 'el que',
+            src: '/img/1.jpg'
         },
         {
             id: 3,
             nombre: 'Calabacin',
-            precio: 2.1
+            precio: 2.1,
+            descripcion: 'lo',
+            src: '/img/1.jpg'
         },
         {
             id: 4,
             nombre: 'Fresas',
-            precio: 0.6
+            precio: 0.6,
+            descripcion: 'lea',
+            src: '/img/1.jpg'
         }
 
     ]
@@ -33,7 +42,7 @@ window.onload = function () {
         for (let info of baseDeDatos) {
             // Estructura
             let miNodo = document.createElement('div');
-            miNodo.classList.add('card', 'col-sm-4');
+            miNodo.classList.add('card', 'col-4');
             // Body
             let miNodoCardBody = document.createElement('div');
             miNodoCardBody.classList.add('card-body');
@@ -41,18 +50,29 @@ window.onload = function () {
             let miNodoTitle = document.createElement('h5');
             miNodoTitle.classList.add('card-title');
             miNodoTitle.textContent = info['nombre'];
+            // Imagen
+            let miNodoImg = document.createElement('img');
+            miNodoImg.classList.add('img-fluid');
+            miNodoImg.setAttribute('src', info['src']);
+            miNodoImg.textContent = info['src'];
+            // Descripcion
+            let miNodoDesc = document.createElement('p');
+            miNodoDesc.classList.add('card-text');
+            miNodoDesc.textContent = info['descripcion'];
             // Precio
             let miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
-            miNodoPrecio.textContent = info['precio'] + '€';
+            miNodoPrecio.textContent = 'Precio: ' + info['precio'] + '€';
             // Boton 
             let miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn', 'btn-primary');
-            miNodoBoton.textContent = '+';
+            miNodoBoton.textContent = 'Comprar';
             miNodoBoton.setAttribute('marcador', info['id']);
             miNodoBoton.addEventListener('click', anyadirCarrito);
             // Insertamos
             miNodoCardBody.appendChild(miNodoTitle);
+            miNodoCardBody.appendChild(miNodoImg);
+            miNodoCardBody.appendChild(miNodoDesc);
             miNodoCardBody.appendChild(miNodoPrecio);
             miNodoCardBody.appendChild(miNodoBoton);
             miNodo.appendChild(miNodoCardBody);
@@ -125,4 +145,49 @@ window.onload = function () {
 
     // Inicio
     renderItems();
+
+    //Modal carrito
+    $("#myBtn-c").click(function(){
+        $("#myModal-c").modal();
+      });
+
+      //Pago paypal
+      paypal.Button.render({
+
+        env: 'sandbox', // sandbox | production
+        // PayPal Client IDs - replace with your own
+        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+        client: {
+            sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+            production: '<insert production client id>'
+        },
+        // Show the buyer a 'Pay Now' button in the checkout flow
+        commit: true,
+        // payment() is called when the button is clicked
+        payment: function(data, actions) {
+            // Make a call to the REST api to create the payment
+            return actions.payment.create({
+                payment: {
+                    transactions: [
+                        {
+                            amount: { total: '0.01', currency: 'USD' }
+                        }
+                    ]
+                }
+            });
+        },
+        // onAuthorize() is called when the buyer approves the payment
+        onAuthorize: function(data, actions) {
+            // Make a call to the REST api to execute the payment
+            return actions.payment.execute().then(function() {
+                window.alert('Pago completado, su deuda a sido saldada');
+            });
+        }
+    }, '#paypal-button-container');
+
+    //Vaciar carrito
+    $("#btn-v").click(function(){
+        location.reload();
+      });
+
 } 

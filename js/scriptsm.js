@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /*
     $( window ).on( "load", function(){
         $.ajax({
             url: "js/pelis.json",
@@ -12,6 +13,7 @@ $(document).ready(function(){
             }
         });
     });
+    */
 
     $("#myBtn").click(function(){
         $("#myModal").modal();

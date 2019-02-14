@@ -22,7 +22,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
   
   <script src="/js/scriptsm.js"></script>
-
+  <script src="/js/cart.js"></script>
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </head>
 
 <body>
@@ -65,16 +66,19 @@
               <i class="fa fa-sign-in"></i>
             </button>
           </li>
+
+          <!--Boton cart Modal-->
+          <li>
+            <button type="button" class="btn btn-primary" id="myBtn-c" style="margin-left: 10px;">
+              <i class="fa fa-shopping-cart" style="color: white;"></i>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
 </nav>
 
-  <script>
-    $('p').hide();  
-  </script>
-
-  <!-- The Modal -->
+  <!-- The Modal Login -->
   <div class="modal fade" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -104,9 +108,42 @@
         
         <!-- Modal footer 
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <div id="paypal-button-container"></div>
         </div>
-        -->
+      -->
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal Cart -->
+  <div class="modal fade" id="myModal-c">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Carrito</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Carrito -->
+          <aside class="col-sm-4">
+              <h2 style="color:black;">Productos</h2>
+              <!-- Elementos del carrito -->
+              <ul id="carrito" class="list-group"></ul>
+              <hr>
+              <!-- Precio total -->
+              <p class="text-right" style="color:black;">Total: <span id="total"></span>&euro;</p>
+          </aside>
+        </div>  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="btn-v">Vaciar carrito</button>
+          <div id="paypal-button-container"></div>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -267,19 +304,11 @@
 </div>
 
 
-<div class="container">
+<div class="container" >
     <div class="row">
         <!-- Elementos generados a partir del JSON -->
-        <main id="items" class="col-sm-6 row"></main>
+        <main id="items" class="col-sm-12 row" ></main>
         <!-- Carrito -->
-        <aside class="col-sm-4">
-            <h2>Carrito</h2>
-            <!-- Elementos del carrito -->
-            <ul id="carrito" class="list-group"></ul>
-            <hr>
-            <!-- Precio total -->
-            <p class="text-right">Total: <span id="total"></span>&euro;</p>
-        </aside>
     </div>
 </div>
     <!-- /.row -->
