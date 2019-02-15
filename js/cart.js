@@ -3,7 +3,7 @@ window.onload = function () {
     let baseDeDatos = [
         {
             id: 1,
-            nombre: 'Patata',
+            nombre: 'El sexto sentido',
             precio: 1,
             descripcion: 'puto',
             src: '/img/1.jpg'
@@ -11,21 +11,34 @@ window.onload = function () {
         },
         {
             id: 2,
-            nombre: 'Cebolla',
+            nombre: 'Pulp Fiction',
             precio: 1.2,
             descripcion: 'el que',
             src: '/img/1.jpg'
         },
         {
             id: 3,
-            nombre: 'Calabacin',
+            nombre: 'Todo Sobre Mi Madre',
             precio: 2.1,
             descripcion: 'lo',
             src: '/img/1.jpg'
         },
         {
             id: 4,
-            nombre: 'Fresas',
+            nombre: '300',
+            precio: 0.6,
+            descripcion: 'lea',
+            src: '/img/1.jpg'
+        },
+        {
+            id: 4,
+            nombre: 'El silencio de los corderos',
+            precio: 0.6,
+            descripcion: 'lea',
+            src: '/img/1.jpg'
+        },{
+            id: 4,
+            nombre: 'Forrest Gump',
             precio: 0.6,
             descripcion: 'lea',
             src: '/img/1.jpg'
@@ -189,5 +202,10 @@ window.onload = function () {
     $("#btn-v").click(function(){
         location.reload();
       });
+
+      $(".card-body").click(function(){
+        $(".img-fluid").slideUp();
+      });
+      
 
 } 
