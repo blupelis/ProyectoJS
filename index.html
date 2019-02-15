@@ -12,6 +12,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
 
@@ -27,10 +28,23 @@
   <!-- Favicon-->
   <link rel="shortcut icon" type=”image/png” href="img/favicon.ico"/>
 
+=======
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  
+   <!-- Favicon-->
+   <link rel="shortcut icon" type=”image/png” href="img/favicon.ico"/>
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  
+  <script src="/js/scriptsm.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+>>>>>>> luis
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg  bg-dark fixed-top">
     <div class="container">
@@ -39,12 +53,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-          <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search this blog">
-              <div class="input-group-append">
-                <button class="btn btn-secondary" type="button">
-                  <i class="fa fa-search"></i>
-                </button>
+          
     </div>
         <ul class="navbar-nav ">
           <li class="nav-item">
@@ -56,12 +65,110 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contacto</a>
           </li>
+          
+          <!--Buscar-->
+          <li>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search this blog">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>  
+          </li>
+
+          <!--Boton login Modal-->
+          <li>
+            <button type="button" class="btn btn-primary" id="myBtn" style="margin-left: 10px;">
+              <i class="fa fa-sign-in"></i>
+            </button>
+          </li>
+
+          <!--Boton cart Modal-->
+          <li>
+            <button type="button" class="btn btn-primary" id="myBtn-c" style="margin-left: 10px;">
+              <i class="fa fa-shopping-cart" style="color: white;"></i>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
 
+  <!-- The Modal Login -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1" style="color: black;">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" style="color: black;">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary float-right">Login</button>
+          </form>
+        </div>
+        
+        <!-- Modal footer 
+        <div class="modal-footer">
+          <div id="paypal-button-container"></div>
+        </div>
+      -->
+      </div>
+    </div>
+  </div>
 
+<<<<<<< HEAD
+
+=======
+  <!-- The Modal Cart -->
+  <div class="modal fade" id="myModal-c">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Carrito</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Carrito -->
+          <aside class="col-sm-4">
+              <h2 style="color:black;">Productos</h2>
+              <!-- Elementos del carrito -->
+              <ul id="carrito" class="list-group"></ul>
+              <hr>
+              <!-- Precio total -->
+              <p class="text-right" style="color:black;">Total: <span id="total"></span>&euro;</p>
+          </aside>
+        </div>  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="btn-v">Vaciar carrito</button>
+          <div id="paypal-button-container"></div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+>>>>>>> luis
 
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -161,8 +268,9 @@
           <a href="#"><img class="card-img-top" src="https://static.seekingalpha.com/uploads/2017/7/14527192_15000027614377_rId4.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Project One</a>
+              <a id="n0" href="#"></a>
             </h4>
+<<<<<<< HEAD
             <div class="toggler">
               <div id="effect" class="newClass ui-corner-all">
                 ESTE TEXTO ES UNA MIERDA Y NO SE EXPANDE
@@ -174,6 +282,9 @@
           <div class="card-footer">
               
             <a href="#" class="btn btn-primary">Learn More</a>
+=======
+            <p id="d0" class="card-text"></p>
+>>>>>>> luis
           </div>
         </div>
       </div>
@@ -184,12 +295,9 @@
           <a href="#"><img class="card-img-top" src="img/300.png" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Project One</a>
+              <a id="n1" href="#"></a>
             </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <p id="d1" class="card-text"></p>
           </div>
         </div>
       </div>
@@ -198,12 +306,9 @@
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Project One</a>
+              <a id="n2" href="#"></a>
             </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <p id="d2" class="card-text"></p>
           </div>
         </div>
       </div>
@@ -212,12 +317,9 @@
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Project One</a>
+              <a href="#">Project Four</a>
             </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <p id="d2" class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
         </div>
       </div>
@@ -226,12 +328,9 @@
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Project One</a>
+              <a href="#">Project Five</a>
             </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
         </div>
       </div>
@@ -240,16 +339,22 @@
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Project One</a>
+              <a href="#">Project Six</a>
             </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
           </div>
         </div>
       </div>
+</div>
+
+
+<div class="container" >
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-12 row" ></main>
+        <!-- Carrito -->
     </div>
+</div>
     <!-- /.row -->
 
     <!-- Features Section 
@@ -301,6 +406,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scriptsm.js"></script>
+  <script src="js/cart.js"></script>
 
 </body>
 
