@@ -12,23 +12,6 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<<<<<<< HEAD
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/modern-business.css" rel="stylesheet">
-
-  <!-- JS -->
-  <script src="js/sriptmr.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
-  
-  <!-- Favicon-->
-  <link rel="shortcut icon" type=”image/png” href="img/favicon.ico"/>
-
-=======
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
@@ -41,7 +24,12 @@
   <script src="/js/scriptsm.js"></script>
   <script src="/js/cart.js"></script>
   <script src="https://www.paypalobjects.com/api/checkout.js"></script>
->>>>>>> luis
+
+  <link rel=stylesheet href="http://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="jquery.expander.js"></script>
+	
+	
 </head>
 
 <body>
@@ -53,8 +41,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-          
-    </div>
         <ul class="navbar-nav ">
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -88,12 +74,14 @@
           <!--Boton cart Modal-->
           <li>
             <button type="button" class="btn btn-primary" id="myBtn-c" style="margin-left: 10px;">
-              <i class="fa fa-shopping-cart" style="color: white;"></i>
+              <i class="fa fa-shopping-cart" ></i>
             </button>
           </li>
-        </ul>
-      </div>
+        </ul>   
     </div>
+        
+      </div>
+    
 </nav>
 
   <!-- The Modal Login -->
@@ -133,9 +121,6 @@
     </div>
   </div>
 
-<<<<<<< HEAD
-
-=======
   <!-- The Modal Cart -->
   <div class="modal fade" id="myModal-c">
     <div class="modal-dialog">
@@ -168,7 +153,6 @@
       </div>
     </div>
   </div>
->>>>>>> luis
 
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -179,10 +163,9 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('https://static.seekingalpha.com/uploads/2017/7/14527192_15000027614377_rId4.jpg')">
+        <div class="carousel-item active" style="background-image: url('img/slider1.jpeg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>First Slide</h3>
-            <p>This is a description for the first slide.</p>
+            <h3>Star Wars</h3>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -211,187 +194,20 @@
     </div>
   </header>
 
-  <div id=zooms>
-    <button class="aumentarFont">[ + aumentar ]</button> 
-    <a href="#" class="disminuirFont">[ - disminuir ]</a> 
-    <a href="#" class="resetearFont">[ resetear ]</a>
-  </div>
+ 
 
   <!-- Page Content -->
   <div class="container">
-
-    <h1 class="my-4">Peliculas Destacadas</h1>
-
-    <!-- Marketing Icons Section 
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- /.row -->
-
-    <!-- Portfolio Section -->
-
-    <div class="row"  >
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="https://static.seekingalpha.com/uploads/2017/7/14527192_15000027614377_rId4.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a id="n0" href="#"></a>
-            </h4>
-<<<<<<< HEAD
-            <div class="toggler">
-              <div id="effect" class="newClass ui-corner-all">
-                ESTE TEXTO ES UNA MIERDA Y NO SE EXPANDE
-              </div>
-            </div>
-            <button id="button" class="ui-state-default ui-corner-all">Leer Descripción</button>
-            
-          </div>
-          <div class="card-footer">
-              
-            <a href="#" class="btn btn-primary">Learn More</a>
-=======
-            <p id="d0" class="card-text"></p>
->>>>>>> luis
-          </div>
-        </div>
-      </div>
-
-     
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="img/300.png" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a id="n1" href="#"></a>
-            </h4>
-            <p id="d1" class="card-text"></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a id="n2" href="#"></a>
-            </h4>
-            <p id="d2" class="card-text"></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Four</a>
-            </h4>
-            <p id="d2" class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Five</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Project Six</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-          </div>
-        </div>
-      </div>
-</div>
-
-
-<div class="container" >
-    <div class="row">
+    <h1 class="my-4" style="color:white">Peliculas Destacadas</h1>
+      <div class="row">
+          
         <!-- Elementos generados a partir del JSON -->
-        <main id="items" class="col-sm-12 row" ></main>
-        <!-- Carrito -->
+        <a id="items" class="col-sm-12 row" ></a>
+        
+      </div>
     </div>
-</div>
-    <!-- /.row -->
-
-    <!-- Features Section 
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Modern Business Features</h2>
-        <p>The Modern Business template by Start Bootstrap includes:</p>
-        <ul>
-          <li>
-            <strong>Bootstrap v4</strong>
-          </li>
-          <li>jQuery</li>
-          <li>Font Awesome</li>
-          <li>Working contact form with validation</li>
-          <li>Unstyled page elements for easy customization</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-      </div>
-    </div> -->
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Call to Action Section 
-    <div class="row mb-4">
-      <div class="col-md-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-      </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
-      </div>
-    </div>-->
-
-  </div>
+    
+   
   <!-- /.container -->
 
   <!-- Footer -->

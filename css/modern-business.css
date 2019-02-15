@@ -9,7 +9,7 @@ body {
   background-position: center;
 }
 
-h1, .navbar-brand, .nav-item a, p, h2, h3, label {
+h1, .navbar-brand, .nav-item a, p, h2, h3, label, i {
   color: white;
 }
 
@@ -24,10 +24,7 @@ h1, .navbar-brand, .nav-item a, p, h2, h3, label {
 }
 
 footer{
-  
-  height: 40px;
-
-    
+  height: 40px;   
 }
 
 .carousel-item {
@@ -44,9 +41,24 @@ footer{
   margin-bottom: 30px;
 }
 
-.toggler { width: 500px; height: 200px; position: relative; }
-#button { padding: .5em 1em; text-decoration: none; }
-#effect { position: relative; }
-.newClass { width: 240px;  padding: 1em; letter-spacing: 0; margin: 0; }
-.anotherNewClass { text-indent: 40px; letter-spacing: .2em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.1em; }
 
+
+.card {
+  z-index: 1;
+  border-radius: unset;
+  border: 0;
+  transition: 0.4s;
+}
+.card-wrapper {
+  padding: 0;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.card-img-top {
+  border-radius: unset;
+}
