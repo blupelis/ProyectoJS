@@ -8,34 +8,20 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>BluPelis</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/menuGeneros.css" rel="stylesheet">
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
-  <!-- Función del menú Categorías de películas -->
-  <script>
-    $(".select").on("click", "li", function() {
-    $("#opened").click();
-    var $t = $(this),
-      $f = $(".field");
-    (text = $t.text()), (icon = $t.find("i").attr("class"));
-    $f.find("label").text(text);
-    $f.find("i").attr("class", icon);
-    });
-    $(".field").click(function(e) {
-    e.preventDefault();
-    $("#opened").click();
-    });
-  </script>
+  <!-- Llamar al js para el menú de los géneros -->
+  <script src="js/menuGeneros.js"></script>
+
   </style>
 </head>
 
@@ -97,42 +83,45 @@
       </div>
     </div>
   </nav>
-
-  <!-- Contenido Menú -->
-  <div class="menuGeneros">
+<div class="container">
+ <!-- Contenido Menú -->
+ <div class="menuGeneros">
     <div class="search-select">
-      <span class="field"><label class="seltext" for="opened">Géneros</label><i class="icon user"></i></span><input id="opened" type="checkbox" />
+      <span class="field"><label class="seltext" for="opened">Géneros</label></span><input id="opened" type="checkbox" />
       <ul class="select">
         <li class="icon arrow"></li>
         <li class="sel">
-          terror        <i class="icon list"></i>
+          terror
         </li>
         <li>
-          acción<i class="icon stat"></i>
+          acción
         </li>
         <li>
-          ciencia ficción<i class="icon accs"></i>
+          ciencia ficción
         </li>
         <li>
-          aventura<i class="icon sign"></i>
+          aventura
+        </li>
+        <li>
+          drama
         </li>
       </ul>
     </div>
   </div>
+</div>
+ 
 
   <!-- Page Content -->
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Portfolio 4
-      <small>Subheading</small>
-    </h1>
+    <h1 class="mt-4 mb-3">Películas</h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="index.html">Home</a>
       </li>
-      <li class="breadcrumb-item active">Portfolio 4</li>
+      <li class="breadcrumb-item active">Películas</li>
     </ol>
 
     <div class="row">

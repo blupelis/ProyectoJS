@@ -1,0 +1,163 @@
+/* Título películas */
+h1 {
+    color: white;
+}
+
+
+
+/* Menú géneros de películas */
+@import "http://webfonts.ru/import/ptsans.css";
+body {
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
+.search-select {
+padding-right: 25%;
+margin: 30px auto;
+width: 200px;
+float: left;
+}
+.search-select .field {
+border: 1px solid #212529;
+height: 20px;
+width: 250px;
+padding: 10% 0 5% 6%;
+margin: 0;
+border-radius: 4px;
+cursor: pointer;
+background-color: #f8f9fa;
+}
+
+.search-select .icon:after {
+font-style: normal;
+font-family: FontA;
+color: #212529;
+font-size: 20px;
+position: relative;
+right: 10px;
+opacity: 0.8;
+float: right;
+}
+.search-select .icon.user:after {
+content: "";
+}
+.search-select .icon.list:after {
+content: "";
+}
+.search-select .icon.stat:after {
+content: "";
+}
+.search-select .icon.accs:after {
+content: "";
+}
+.search-select .icon.sign:after {
+content: "";
+}
+.search-select .icon.arrow:after {
+content: "";
+}
+.search-select input {
+display: none;
+}
+.search-select input:checked + .select {
+opacity: 1;
+top: 15px;
+}
+.search-select ul.select {
+-moz-transition-property: opacity, top;
+-o-transition-property: opacity, top;
+-webkit-transition-property: opacity, top;
+transition-property: opacity, top;
+-moz-transition-duration: 0.1s;
+-o-transition-duration: 0.1s;
+-webkit-transition-duration: 0.1s;
+transition-duration: 0.1s;
+-moz-transition-timing-function: ease-in;
+-o-transition-timing-function: ease-in;
+-webkit-transition-timing-function: ease-in;
+transition-timing-function: ease-in;
+opacity: 0;
+list-style: none;
+padding: 0;
+margin: 0;
+background-color: white;
+border-radius: 4px;
+width: 250px;
+position: relative;
+top: 10px;
+left: 1px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.search-select ul.select li {
+z-index: 1;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+height: 20px;
+width: 250px;
+line-height: 25%;
+padding: 15px 10px;
+text-transform: uppercase;
+color: #212529;
+font-family: "PT Sans Caption";
+font-weight: normal;
+font-style: normal;
+font-size: 18px;
+padding-left: 20px;
+width: 250px;
+color: #212529;
+border-bottom: 1px solid #ddd8d7;
+}
+.search-select ul.select li.arrow {
+display: inline;
+position: absolute;
+top: -20px;
+left: 270px;
+width: 20px;
+height: 20px;
+z-index: 0;
+border: none;
+}
+
+.search-select ul.select li:nth-child(2) {
+border-radius: 4px 4px 0 0;
+}
+.search-select ul.select li:last-child {
+border-radius: 0 0 4px 4px;
+}
+.search-select ul.select li:not(.icon):hover {
+margin-top: -1px;
+background-color: #007bff;
+color: white;
+border-top: 1px solid #007bff;
+border-bottom: 1px solid #007bff;
+}
+.search-select ul.select li:not(.icon):hover i:after {
+color: #212529;
+}
+.search-select ul.select li:last-child {
+border: none;
+}
+.search-select ul.select li i:after {
+color: #c0b7b4;
+}
+.search-select label {
+cursor: pointer;
+height: 20px;
+width: 250px;
+line-height: 20px;
+padding: 15px 10px;
+text-transform: uppercase;
+color: #0165cf;
+font-family: "PT Sans Caption";
+font-weight: normal;
+font-style: normal;
+font-size: 18px;
+}
+
+@font-face {
+font-family: "FontA";
+src: url(https://s.cdpn.io/999/fontawesome-webfont.ttf) format('truetype'), url(https://s.cdpn.io/999/FontAwesome.otf) format('opentype');
+}
