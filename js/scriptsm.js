@@ -15,11 +15,12 @@ $(document).ready(function(){
     });
     */
 
+    //modal login
     $("#myBtn").click(function(){
         $("#myModal").modal();
       });
 
-
+      //validar form
       $("#btn-r").click(function(){
         
         var err;
@@ -50,28 +51,24 @@ $(document).ready(function(){
 
       });
 
-      
+    //Enviar datos a php por ajax
     $("#btn-r").click(function(){
-        event.preventDefault();
-
-        var name = $("input#nombre").val();
-        var email = $("input#email").val();
-        var pass = $("input#pass").val();
-        var phone = $("input#phone").val();
-
+        var nombre = $("#nombre").val();
+        var email = $("#email").val();
+        var pass = $("#pass").val();
+        //alert(nombre);
+        
         $.ajax({
-            url: "././mail/contact_me.php",
             type: "POST",
+            url: "/js/register.php",
             data: {
-              name: name,
+              nombre: nombre,
               email: email,
-              pass: pass,
-              phone: phone
-            },complete: function() {
-                setTimeout(function() {
-                  $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-                }, 1000);
-              }
+              pass: pass
+            },success: function(data){
+                //alert("Ha sido ejecutada la acción.");
+                //alert(data);
+            }
         });
     });
 });
