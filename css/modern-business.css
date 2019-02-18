@@ -30,6 +30,7 @@ footer{
   height: 40px;   
 }
 
+
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -64,4 +65,8 @@ footer{
 
 .card-img-top {
   border-radius: unset;
+}
+
+#divPP{
+  color: white;
 }
