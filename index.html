@@ -154,12 +154,40 @@
     </div>
   </div>
 
+  <!-- The Modal Desc -->
+  <div class="modal fade" id="myModal-d">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Descripción</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Carrito -->
+          <aside class="col-sm-12">
+              <!-- Elementos del carrito -->
+              <p id="desc" ></p>
+              <hr>
+              
+          </aside>
+        </div>  
+       
+        
+      </div>
+    </div>
+  </div>
+
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
@@ -169,17 +197,20 @@
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('https://static.seekingalpha.com/uploads/2017/7/14527192_15000027614377_rId4.jpg')">
+        <div class="carousel-item" style="background-image: url('img/deadpool.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Second Slide</h3>
-            <p>This is a description for the second slide.</p>
+            <h3>Deadpool</h3>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('https://static.seekingalpha.com/uploads/2017/7/14527192_15000027614377_rId4.jpg')">
+        <div class="carousel-item" style="background-image: url('img/polarExpress.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Third Slide</h3>
-            <p>This is a description for the third slide.</p>
+            <h3>PolarExpress</h3>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('img/nemix.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Buscando a nemo</h3>
           </div>
         </div>
       </div>
@@ -203,6 +234,7 @@
           
         <!-- Elementos generados a partir del JSON -->
         <a id="items" class="col-sm-12 row" ></a>
+        
         
       </div>
     </div>

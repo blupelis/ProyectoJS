@@ -5,6 +5,7 @@ window.onload = function () {
             id: 1,
             nombre: 'El sexto sentido',
             precio: 1,
+            genero: 'Terror',
             descripcion: 'El psicólogo Malcolm Crowe es un profesional de indudable talento. Una noche, mientras pasa una agradable velada con su esposa Anna, uno de sus pacientes, Vincent Gray, hace una inesperada visita a la casa de Crowe, y antes de suicidarse ante sus ojos, le dispara. Meses más tarde, el psicólogo está aún convaleciente de sus heridas físicas, aunque las psicológicas serán más difíciles de curar, ya que ha perdido la confianza en sí mismo, y empieza a dudar sobre su capacidad profesional, dado el fracaso obtenido con el caso de Gray. Pero su siguiente caso es el de Cole Sear, un niño de ocho años que, tras el divorcio de su padres, vive con su madre Lynn, encerrado en su propio mundo y obsesionado con un terrible y oscuro secreto: ve fanstasmas, es decir, gente muerta en extrañas y violentas circunstancias que acude a él en busca de ayuda. Sólo el doctor Crowe será capaz de ayudarle y descubrir la terrible verdad sobre los poderes sobrenaturales de Cole, y así, de paso, será la oportunidad de resarcirse del error cometido con Gray. Aunque las consecuencias, tanto para el paciente como para el terapeuta, acabarán produciendo un estremecimiento que les revelará misterios angustiosos e inexplicables.',
             src: '/img/ElSextoSentido.png'
 
@@ -13,6 +14,7 @@ window.onload = function () {
             id: 2,
             nombre: 'Pulp Fiction',
             precio: 1.2,
+            genero: 'Thriller',
             descripcion: 'Jules Winnfield y Vincent Vega son dos asesinos a sueldo que trabajan a las órdenes del temido gángster Marsellus Wallace, quien les encarga la importante misión de recuperar su misterioso maletín, que ha sido robado. Ahí empezarán todos sus problemas. Los dos criminales son polos opuestos que deberán trabajar juntos para cumplir su cometido. De forma paralela, Vincent tendrá que hacerse cargo de Mia Wallace, la peculiar novia de su jefe, a petición del mismo, mientras él pasa unos días fuera de la ciudad. Su compañero Jules le recomienda que vaya con cautela, pues la atractiva mujer le puede meter en problemas. Mientras, el boxeador Butch Coolidge debe perder una importante pelea, pues ha sido sobornado por Wallace para participar en este combate amañado, y la pareja formada por Pumpkin/Ringo y Honey Bunny/Yolanda decidirá atracar un establecimiento debido a su lamentable situación laboral. Esta película de culto escrita y dirigida por Quentin Tarantino se convirtió en todo un icono de la década de los noventa y en uno de los filmes mejor valorados de la historia. Además de los mencionados, cuenta en su reparto con Harvey Keitel, Maria de Medeiros, Eric Stoltz, Rosanna Arquette y Christopher Walken. ',
             src: '/img/PulpFiction.png'
         },
@@ -20,6 +22,7 @@ window.onload = function () {
             id: 3,
             nombre: 'Todo Sobre Mi Madre',
             precio: 2.1,
+            genero: 'Drama',
             descripcion: 'Manuela es una enfermera que vive sola con su hijo Esteban, a quien adora. Esteban es muy cinéfilo y le encanta ver películas en la compañía de su madre, sobre todo Eva al desnudo (o Todo sobre Eva, como se titularía en una traducción más fiel del inglés). Para el día del cumpleaños de su madre, Esteban decide invitarla a una noche de teatro viendo Un tranvía llamado deseo. Los dos adoran la obra, y a la salida del lugar se encuentran con Huma Rojo, la actriz protagonista. Esteban no se lo piensa dos veces y corre tras ella para conseguir su autógrafo. Cruza la calle a toda velocidad y, en ese momento, un coche lo atropella. Manuela presencia, de este modo, la muerte de su propio hijo, pérdida de la que no podrá recuperarse en toda su vida. Poco tiempo después, aún loca de dolor, Manuela viaja a Barcelona en busca del padre de su hijo, una búsqueda que no será fácil, ni tampoco carente de aún más dolores. La película que consagró al director manchego Pedro Almodóvar, no sólo a nivel patrio sino también internacional. César y Oscar en el año 2000 a la mejor película extranjera. ',
             src: '/img/TodoSobreMiMadre.png'
         },
@@ -27,25 +30,31 @@ window.onload = function () {
             id: 4,
             nombre: '300',
             precio: 0.6,
+            genero: 'Acción',
             descripcion: 'Basada en la épica novela gráfica de Frank Miller, 300 narra la antigua Batalla de Termópilas, en la que el rey Leónidas (Gerard Butler), junto con 300 espartanos, luchó a muerte contra el Emperador Jerjes y su gran ejército persa. Haciendo frente a insuperables adversidades, el valor y sacrificio de estos hombres inspiró a toda Grecia para unirse contra el enemigo persa, y así decir basta a esa situación en favor de la democracia.La película hace cobrar vida a la aclamada novela gráfica de Miller (Sin City) al combinar la acción real con fondos digitales que reproducen su marcada visión de este antiguo cuento histórico.',
             src: '/img/300.png'
         },
         {
-            id: 4,
+            id: 5,
             nombre: 'El silencio de los corderos',
             precio: 0.6,
+            genero: 'Thriller',
             descripcion: 'El FBI busca a "Buffalo Bill", un asesino en serie que mata a sus víctimas, todas adolescentes, después de prepararlas minuciosamente y arrancarles la piel. Para poder atraparlo recurren a Clarice Starling, una brillante licenciada universitaria, experta en conductas psicópatas, que aspira a formar parte del FBI. Siguiendo las instrucciones de su jefe, Jack Crawford, Clarice visita la cárcel de alta seguridad donde el gobierno mantiene encerrado al Dr. Hannibal Lecter, antiguo psicoanalista y asesino, dotado de una inteligencia superior a la normal. Su misión será intentar sacarle información sobre los patrones de conducta del asesino que están buscando.',
             src: '/img/ElSilencioDeLosCorderos.png'
         },{
-            id: 4,
+            id: 6,
             nombre: 'Forrest Gump',
             precio: 0.6,
+            genero: 'Comedia',
             descripcion: 'Forrest Gump (Tom Hanks) sufre desde pequeño un cierto retraso mental. A pesar de todo, gracias a su tenacidad y a su buen corazón será protagonista de acontecimientos cruciales de su país durante varias décadas. Mientras pasan por su vida multitud de cosas en su mente siempre está presente la bella Jenny (Robin Wright), su gran amor desde la infancia, que junto a su madre será la persona más importante en su vida.',
             src: '/img/ForrestGump.png'
         }
 
     ]
     let $items = document.querySelector('#items');
+    
+    
+    let $desc = document.querySelector('#desc');
     let carrito = [];
     let total = 0;
     let $carrito = document.querySelector('#carrito');
@@ -85,18 +94,20 @@ window.onload = function () {
 
             let miNodoBoton2 = document.createElement('button');
             miNodoBoton2.classList.add('btn', 'btn-primary');
-            miNodoBoton2.textContent = 'Leer Mas';
+            miNodoBoton2.textContent = 'Descripción';
             miNodoBoton2.setAttribute('marcador', info['id']);
-            miNodoBoton2.addEventListener('click', anyadirCarrito)
+            miNodoBoton2.addEventListener('click', desc)
             // Insertamos
             miNodoCardBody.appendChild(miNodoTitle);
             miNodoCardBody.appendChild(miNodoImg);
-            miNodoCardBody.appendChild(miNodoDesc);
+            //miNodoCardBody.appendChild(miNodoDesc);
             miNodoCardBody.appendChild(miNodoPrecio);
             miNodoCardBody.appendChild(miNodoBoton);
             miNodoCardBody.appendChild(miNodoBoton2);
             miNodo.appendChild(miNodoCardBody);
             $items.appendChild(miNodo);
+            
+            
         }
     }
     function anyadirCarrito () {
@@ -112,14 +123,8 @@ window.onload = function () {
     function renderizarCarrito () {
         // Vaciamos todo el html
         $carrito.textContent = '';
-        // Generamos los Nodos a partir de carrit 
-  
-
-
-        carrito.forEach(function (item, indice) { 
-  
-
-
+        // Generamos los Nodos a partir de carrito
+        carrito.forEach(function (item, indice) {
             // Obtenemos el item que necesitamos de la variable base de datos
             let miItem = baseDeDatos.filter(function(itemBaseDatos) {
                 return itemBaseDatos['id'] == item;
@@ -138,7 +143,7 @@ window.onload = function () {
             miNodo.appendChild(miBoton);
             $carrito.appendChild(miNodo);
         })
-    }
+}
 
     function borrarItemCarrito () {
         // Obtenemos la posicion que hay en el boton pulsado
@@ -166,8 +171,8 @@ window.onload = function () {
         let totalDosDecimales = total.toFixed(2);
         // Renderizamos el precio en el HTML
         $total.textContent = totalDosDecimales;
-    }
-    // Eventos
+}
+    // Eventosdesc
 
     // Inicio
     renderItems();
@@ -202,7 +207,7 @@ window.onload = function () {
                 }
             });
         },
-        // onAuthorize() is called when the buyer approves the payment
+        // onAuthorize() is called when the buyer approves the paymentrenderizardesc ()
         onAuthorize: function(data, actions) {
             // Make a call to the REST api to execute the payment
             return actions.payment.execute().then(function() {
@@ -217,19 +222,30 @@ window.onload = function () {
       });
 
    //Leer mas
-   $(document).on('ready',function(){
-    $("#ocultar").click(function(event){
-    event.preventDefault();
-    $("#oculto").hide("slow");
-    $("#mostrar").show(1000);
-    });
+   
 
-    $("#mostrar").click(function(event){
-    event.preventDefault();
-    $("#oculto").show(1000);
-    $("#mostrar").hide("slow");
-    });
-    });
+ 
+function desc (){
+    $("#myModal-d").modal();
+    let marcador = this.getAttribute('marcador');
+    renderizardesc (marcador);
+}
+function renderizardesc (marcador) {
+    // Vaciamos todo el html
+    $desc.textContent = '';
+    // Generamos los Nodos a partir de carrito
+        // Obtenemos el item que necesitamos de la variable base de datos
+        let miItem = baseDeDatos.filter(function(itemBaseDatos) {
+            return itemBaseDatos['id'] == marcador;
+        });
+        // Creamos el nodo del item del carrito
+        let miNodo = document.createElement('p');
+        
+        miNodo.textContent = `${miItem[0]['descripcion']}`;
+       
+        $desc.appendChild(miNodo);
+    
 
-      
-} 
+
+}
+}

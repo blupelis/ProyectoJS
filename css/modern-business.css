@@ -9,10 +9,13 @@ body {
   background-position: center;
 }
 
-h1, .navbar-brand, .nav-item a, p, h2, h3, label, i {
+h1, .navbar-brand, .nav-item a, h2, h3, label, i {
   color: white;
 }
 
+p{
+  position: left;
+}
 
 .navbar-toggler-icon{
   background-image: url("../img/menu.png");
