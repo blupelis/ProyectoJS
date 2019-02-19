@@ -201,7 +201,7 @@ window.onload = function () {
                 payment: {
                     transactions: [
                         {
-                            amount: { total: 'total', currency: 'EUR' }
+                            amount: { total: total, currency: 'EUR' }
                         }
                     ]
                 }
