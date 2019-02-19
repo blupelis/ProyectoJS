@@ -15,11 +15,12 @@ $(document).ready(function(){
     });
     */
 
+    //modal login
     $("#myBtn").click(function(){
         $("#myModal").modal();
       });
 
-
+      //validar form
       $("#btn-r").click(function(){
         
         var err;
@@ -49,7 +50,25 @@ $(document).ready(function(){
         }
 
       });
-    
+
+    //Enviar datos a php por ajax
+    $("#btn-r").click(function(){
+        var nombre = $("#nombre").val();
+        var email = $("#email").val();
+        var pass = $("#pass").val();
+        //alert(nombre);
+        
+        $.ajax({
+            type: "POST",
+            url: "/js/register.php",
+            data: {
+              nombre: nombre,
+              email: email,
+              pass: pass
+            },success: function(data){
+                //alert("Ha sido ejecutada la acción.");
+                //alert(data);
+            }
+        });
+    });
 });
-   
-   
