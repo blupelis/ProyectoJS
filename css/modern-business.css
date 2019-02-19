@@ -27,7 +27,12 @@ p{
 }
 
 footer{
-  height: 40px;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 110px;
+    bottom: 10;
+    width: 100%; 
 }
 
 
